@@ -3,6 +3,8 @@
 ES6 Modules
 ES6 modules need a package.json file in order to use the modularization. This is to help identify that the folder is a package for an application.
 
+// The whole point of modules is to compartmentalize pieces of code. It creates a cleaner code (program).
+
 //===========================
 
 CREATE package.json
@@ -60,8 +62,11 @@ import personName, {pet, greet} from "./name.js";
 console.log(personName);
 console.log(pet.name, pet.breed);
 greet("Monika");
+
+//===========================
+
 Running a package
 To run the package, the start script of package.json is needed, and to run the script, the command npm run <scriptName> is used.
 
-Ex. npm run start
+Ex. npm run start // 'start' is the key name you added to your package.json above.
 //===========================
